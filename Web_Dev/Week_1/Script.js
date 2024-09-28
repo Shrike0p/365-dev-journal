@@ -2,6 +2,7 @@
 
 let a="M"
 
+
 if(a==="M"){
     console.log("You are male");
 }else{
@@ -45,6 +46,7 @@ for(let i=0;i<personarray.length;i++){
  * Objects:- Combining values all together 
  */
 
+
 const allusers={
     firstname:"Prakhar",
     gender:"Male"
@@ -68,8 +70,8 @@ allusers["firstname"]
 allusers.firstname
 
 for(let i=0;i<allusers.length;i++){
-    if(allusers[i]["gender"]=="Male"){
-        console.log(allusers[i]["firstname"]);
+    if(allusers[i].gender=="Male"){
+        console.log(allusers[i].firstname);
     }
 }
 
@@ -136,21 +138,21 @@ function getLength(str) {
   // lastIndexOf
   function findLastIndexOf(str, target) {
     console.log("Original String:", str);
-    console.log("Index:", str.lastIndexOf(target));
+    console.log("Index:", str.lastIndexOf(target));  //saaaabb
   }
   findLastIndexOf("Hello World World", "World");
   
   // slice==basically here we give start index and till the end index it will give the string in between
   function getSlice(str, start, end) {
     console.log("Original String:", str);
-    console.log("After slice:", str.slice(start, end));
+    console.log("After slice:", str.slice(start, end));   
   }
   getSlice("Hello World", 0, 5);
   
   // substring==basically here we give start index and the size of the string so let say 2,5 so it start from 2 to 5.
   function getSubstring(str, start, end) {
     console.log("Original String:", str);
-    console.log("After substring:", str.substring(start, end));
+    console.log("After substring:", str.substring(start, end));  
   }
   getSubstring("Hello World", 0, 5);
   
@@ -164,14 +166,14 @@ function getLength(str) {
   // split
   function splitString(str, separator) {
     console.log("Original String:", str);
-    console.log("After split:", str.split(separator));
+    console.log("After split:", str.split(separator));  
   }
   splitString("Hello World", " ");
   
   // trim==trim out from start and begining 
   function trimString(str) {
     console.log("Original String:", str);
-    console.log("After trim:", str.trim());
+    console.log("After trim:", str.trim());     
   }
   trimString(" Hello World ");
   
@@ -284,7 +286,7 @@ function pushExample(arr, element) {
   function mapExample(arr) {
     console.log("Original Array:", arr);
   
-    let newArr = arr.map(function(item) {
+    let newArr = arr.map(function(item) {  
       return item * 2;
     });
     console.log("After map:", newArr);
